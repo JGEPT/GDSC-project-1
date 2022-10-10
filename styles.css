@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+}
+
+.view-container, h1, .desc, .details-container, .creator-container, .view-img, .img-container, 
+.currency-container, .currency-icon, .clock-container, .clock-icon, .price, .time, .creator-img, .creator, .creator-name {
+  background-color: #14253d;
+}
+
+.container {
+  background-color: #14253d;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 7em auto;
+  width: 22em;
+  height: 40em;
+  border-radius: 1em;
+  box-shadow: 1em 1em 1em 1em #0b1422;
+}
+
+.nft-img{
+  width: 20em;
+  height: 20em;
+  border-radius: 1em;
+}
+
+h1 {
+  margin-top: 1.25em;
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+  transition: ease-in-out 0.5s;
+}
+
+h1:hover {
+  color: #02d4cd;
+  cursor: pointer;
+}
+
+
+.desc, .time, .creator {
+  color: #8bacda;
+  font-size: 1.25em;
+}
+
+.price {
+  color: #00fff7;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.currency-icon {
+  width: 0.75em;
+  height: 1.25em;
+}
+
+.clock-icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.creator-img {
+  width: 2em;
+  height: 2em;
+  border: 0.01em solid #ffffff;
+  border-radius: 100%;
+}
+
+.creator-name {
+  font-size: 1.25em;
+  transition: ease-in-out 0.5s;
+}
+
+.creator-name:hover {
+  color: #02d4cd;
+  cursor: pointer;
+}
+
+.view-img {
+  background-color: inherit;
+}
+
+.view-container {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.view-container:hover {
+  opacity: 0.75;
+  background-color: #01b6b0;
+}
+
+.currency-container {
+  display: flex;
+  gap: 0.5em;
+}
+
+.clock-container {
+  display: flex;
+  gap: 0.5em;
+}
+
+.details-container {
+  display: flex;
+  height: 2.50em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  justify-content: space-between;
+  border-bottom: 0.15em solid #2f415b;
+}
+
+.creator-container {
+  display: flex;
+  gap: 0.5em;
+}
