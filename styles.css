@@ -96,6 +96,7 @@ h1:hover {
   justify-content: center;
   opacity: 0;
   transition: ease-in-out 0.5s;
+  border-radius: 1em;
 }
 
 .view-container:hover {
