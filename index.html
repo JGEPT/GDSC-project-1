@@ -6,40 +6,158 @@
     <!-- displays site properly based on user's device -->
     <link
       rel="icon"
-      type="image/png"
+      type="image/webp"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./images/Tekken7-icon.webp"
     />
-    <title>Frontend Mentor | NFT preview card component</title>
+    <title>Tekken 7 | Character Overviews</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <header>
+    <img
+      src="./images/Tekken7-logo.webp"
+      alt="Tekken 7 logo"
+      class="logo-img"
+    />
+  </header>
   <body>
     <!-- Start here mga gwapo/gwapa -->
+    <div class="charselect">
+      <select> 
+        <option>Choose your character</option>
+        <a href="#" class="link"><option>Alisa Bosconovitch</option></a>
+        <option>Asuka Kazama</option>
+        <option>Bryan Fury</option>
+        <option>Claudio Serafino</option>
+        <option>Devil Jin</option>
+        <option>Sergio Dragonov</option>
+        <option>Eddy Gordo</option>
+        <option>Gigas</option>
+        <option>Heihachi Mishima</option>
+        <option>Hwoarang</option>
+        <option>JACK-7</option>
+        <option>Jin Kazama</option>
+        <option>Josie Rizal</option>
+        <option>Katarina Alves</option>
+        <option>Kazumi Mishima</option>
+        <option>Kazuya Mishima</option>
+        <option>KING</option>
+        <option>KUMA</option>
+        <option>Lars Alexandersson</option>
+        <option>Marshal Law</option>
+        <option>Lee Chaolan</option>
+        <option>Leo</option>
+        <option>Lili</option>
+        <option>Lucky Chole</option>
+        <option>Master Raven</option>
+        <option>Miguel Caballero Rojo</option>
+        <option>Nina Williams</option>
+        <option>PANDA</option>
+        <option>Paul Phoenix</option>
+        <option>Shaheen</option>
+        <option>Steve Fox</option>
+        <option>Ling Xiaoyu</option>
+        <option>Yoshimitsu</option>
+        <option>Akuma</option>
+        <option>Eliza</option>
+        <option>Geese Howard</option>
+        <option>Noctis</option>
+        <option>Anna</option>
+        <option>Lei</option>
+        <option>Marduk</option>
+        <option>Negan</option>
+        <option>Julia</option>
+        <option>Armor Kins</option>
+        <option>Zafina</option>
+        <option>Ganryu</option>
+        <option>Leroy</option>
+        <option>Fahkumram</option>
+        <option>Kunimitsu</option>
+        <option>Lidia</option>
+      </select>
+    </div>
     <div class="container">
       <div class="img-container">
-        <img src="./images/image-equilibrium.jpg" alt="Image of NFT" class="nft-img">
+        <img
+          src="./images/BryanFury.png"
+          alt="Image of Bryan Fury from tekken"
+          class="char-img"
+        />
       </div>
       <div class="view-container">
-        <img src="./images/icon-view.svg" alt="Image of view icon" class="view-img">
+        <p class="Keymoves">Key moves:</p>
+        <div class="movenotationlist">
+          <div class="movenotation">
+            <p class="move">Jet Upper</p>
+            <p class="notation">da 9</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Middle Side Kick</p>
+            <p class="notation">2</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Orbital Heel</p>
+            <p class="notation">e 3</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Hatchet kick</p>
+            <p class="notation">sza 1</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Chopping Elbow</p>
+            <p class="notation">a 7</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Knee Strike</p>
+            <p class="notation">d 1</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Knee Break</p>
+            <p class="notation">a 3</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Mach Kick</p>
+            <p class="notation">dd 1</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Mach Punch</p>
+            <p class="notation">dd 7</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Kick off</p>
+            <p class="notation">sza 3</p>
+          </div>
+          <div class="movenotation">
+            <p class="move">Taunt</p>
+            <p class="notation">K</p>
+          </div>
+        </div>
+        <p class="staplecombos">Staple Combos:</p>
+        <div class="combonotation">
+          <p class="launchers">Jet Upper</p>
+          <p class="notation">dd 1 > dd > 87 > 7 > a1~d97</p>
+        </div>
+        <div class="combonotation">
+          <p class="launchers">
+            Orbital Heel, Left Upper, Boa Crusher, Hellraiser
+          </p>
+          <p class="notation">sxd 13 > 313 > dd > a1~d97</p>
+        </div>
       </div>
-    <h1>Equilibrium #3429</h1>
-    <p class="desc">Our Equilibrium collection promotes balance and calm.</p>
-    <div class="details-container">
-      <div class="currency-container">
-        <img src="./images/icon-ethereum.svg" alt="ether" class="currency-icon">
-        <p class="price">0.041 eth</p>
+      <h1>Bryan Fury</h1>
+      <div class="details-container">
+        <p class="desc">ARCHETYPE: Keep Out, Counter Hit, Lockdown</p>
+        <p class="tier">TIER: High Tier/Top 10</p>
       </div>
-      <div class="clock-container">
-        <img src="./images/icon-clock.svg" alt="clock" class="clock-icon">
-      <p class="time">3 days left</p>
+      <div class="difficulty-container">
+        <p class="difficulty">Difficulty:</p>
+        <img
+          src="./images/fivestar.png"
+          alt="5 star difficulty"
+          class="difficulty-img"
+        />
       </div>
     </div>
-    <div class="creator-container">
-      <img src="./images/image-avatar.png" alt="image of zach" class="creator-img">
-      <p class="creator">Creation of</p>
-      <p class="creator-name">Jules Wyvern</p>
-    </div>
-  </div>
   </body>
 </html>

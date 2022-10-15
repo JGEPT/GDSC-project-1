@@ -1,76 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@font-face {
+  font-family: "Iron-Fist";
+  src: url(Fonts/Iron-Fist.ttf);
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #0d192b;
-  font-family: 'Outfit', sans-serif;
+  background-color: #140606;
+  font-family: "Outfit", sans-serif;
   color: #ffffff;
 }
 
-.view-container, h1, .desc, .details-container, .creator-container, .view-img, .img-container, 
-.currency-container, .currency-icon, .clock-container, .clock-icon, .price, .time, .creator-img, .creator, .creator-name {
-  background-color: #14253d;
+.view-container,
+h1,
+.desc,
+.details-container,
+.difficulty-container,
+.view-img,
+.img-container,
+.tier,
+.difficulty,
+.difficulty-img {
+  background-color: #501313;
 }
 
 .container {
-  background-color: #14253d;
+  background-color: #501313;
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 7em auto;
+  margin: 1.5em auto 3em;
   width: 22em;
   height: 38.25em;
   border-radius: 1em;
-  box-shadow: 1em 1em 1em 1em #0b1422;
+  box-shadow: 0em 0em 1em 0.2em #ff0000;
 }
 
-.nft-img{
+.char-img {
   width: 20em;
   height: 20em;
   border-radius: 1em;
+  object-fit: cover;
+  object-position: 0em 0.2em 5em;
+  background-image: linear-gradient(to bottom right, #000000, #5a2424, #861313);
+  box-shadow: 0em 0em 1em 0.01em #ff0000;
 }
 
 h1 {
   margin-top: 0.5em;
   font-size: 1.75em;
-  margin-bottom: 0.5em;
-  transition: ease-in-out 0.5s;
-}
-
-h1:hover {
-  color: #02d4cd;
-  cursor: pointer;
-}
-
-
-.desc, .time, .creator {
-  color: #8bacda;
-  font-size: 1.25em;
-}
-
-.price {
-  color: #00fff7;
-  font-size: 1.25em;
+  margin-bottom: 0.25em;
   text-transform: uppercase;
 }
 
-.currency-icon {
-  width: 0.75em;
-  height: 1.25em;
+.difficulty {
+  margin-top: 0.5em;
+  font-size: 1.75em;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
 }
 
-.clock-icon {
-  width: 1.25em;
-  height: 1.25em;
+h1:hover {
+  color: #ff3333;
+  cursor: pointer;
 }
 
-.creator-img {
-  width: 2em;
-  height: 2em;
-  border: 0.01em solid #ffffff;
-  border-radius: 100%;
+.desc,
+.tier {
+  color: #ffffff;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 .creator-name {
@@ -87,43 +88,122 @@ h1:hover {
   background-color: inherit;
 }
 
+.Keymoves,
+.move,
+.notation,
+.launchers {
+  background-color: inherit;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.Keymoves,
+.staplecombos {
+  font-size: 1.25em;
+}
+
+.staplecombos {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: inherit;
+}
+
+.combonotation {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.notation {
+  font-family: "Iron-Fist", sans-serif;
+  font-size: 1.5em;
+}
+
+.movenotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: inherit;
+}
+
+.movenotationlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-evenly;
+  background-color: inherit;
+  border-bottom: 0.2em solid #830202;
+}
+
 .view-container {
   position: absolute;
-  width: 20em;
-  height: 20em;
+  width: 22em;
+  height: 38.25em;
+  margin-top: -1em;
+  margin-left: -1em;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
   opacity: 0;
   transition: ease-in-out 0.5s;
   border-radius: 1em;
 }
 
 .view-container:hover {
-  opacity: 0.75;
-  background-color: #01b6b0;
-}
-
-.currency-container {
-  display: flex;
-  gap: 0.5em;
-}
-
-.clock-container {
-  display: flex;
-  gap: 0.5em;
+  opacity: 0.95;
+  background-color: #000000;
 }
 
 .details-container {
   display: flex;
-  height: 2.50em;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  flex-direction: column;
+  height: 6em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
   justify-content: space-between;
-  border-bottom: 0.15em solid #2f415b;
+  border-bottom: 0.2em solid #b10000;
 }
 
-.creator-container {
+.difficulty-container {
+  margin: auto 0em;
   display: flex;
-  gap: 0.5em;
+  width: 15em;
+}
+
+.difficulty-img {
+  object-fit: contain;
+  width: 11em;
+  height: 4em;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #610202;
+  border-bottom: 0.2em solid #8b0000;
+  box-shadow: 0em 0em 1em 0.1em #ff0000;
+  z-index: 10;
+  margin-bottom: 1.5em;
+}
+
+.charselect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select {
+  box-shadow: 0em 0em 1em 0.1em #ff0000;
+  font-size: 2em;
+  padding: 1em;
+  background: #610202;
+}
+
+.logo-img {
+  object-fit: contain;
+  width: 23em;
+  background-color: inherit;
 }
