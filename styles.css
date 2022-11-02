@@ -22,7 +22,9 @@ h1,
 .img-container,
 .tier,
 .difficulty,
-.difficulty-img {
+.difficulty-img,
+.search,
+.input {
   background-color: #501313;
 }
 
@@ -202,7 +204,7 @@ header {
   border: none
 }
 
-.characters {
+.characters, .hide {
   margin-top: 5em;
   width: 17.4em;
   max-height: 40em;
@@ -217,7 +219,7 @@ header {
   opacity: 0;
   border: 0.2em solid #8b0000;
   box-shadow: 0em 0em 0.25em 0.001em #ff0000;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
   pointer-events: none;
 }
 
@@ -231,7 +233,7 @@ header {
   background-color: #610202;
 }
 
-.select:hover .characters {
+.select:hover .characters, .search, .input {
   opacity: 1;
   pointer-events: all;
 }
@@ -252,4 +254,22 @@ body, html {
   width: 23em;
   background-color: #610202;
   border: none;
+}
+
+.search .input {
+  background-color: white;
+  border: none;
+  font-size: 1em;
+  padding: 1em;
+  height: auto;
+  width: 16em;
+  color: #000000;
+}
+
+.hide {
+  transition: 0.4s ease-in-out;
+}
+
+.select:hover .hide {
+  display: none;
 }
