@@ -1,5 +1,7 @@
 const CharacterSearch = document.querySelector("[data-search]");
 const Characters = document.querySelectorAll("a");
+const Cards = document.querySelectorAll(".container");
+const CharName = document.querySelectorAll("h1");
 
 CharacterSearch.addEventListener("input", (input) => {
     const check = input.target.value.toLowerCase();
@@ -11,3 +13,27 @@ CharacterSearch.addEventListener("input", (input) => {
         i++;
     })
 })
+
+Characters.forEach(character => {
+  let i = 0;
+  CharName.forEach(name => {
+    character.addEventListener("click", (click) => {
+      const CharacterName = character.textContent;
+      const Compare = name.textContent;
+      const Visibility = (Compare === CharacterName);
+      console.log(CharacterName, Compare, Visibility);
+          if(Visibility !== true){
+          Cards.item(i).classList.add("hide");
+          }
+          else{
+            Cards.item(i).classList.remove("hide");
+          }
+          if(i >= (Cards.length-1)){
+            i=0;
+          }
+          else{
+            i++;
+          }
+        })
+      })
+    })

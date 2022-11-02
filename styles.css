@@ -24,8 +24,19 @@ h1,
 .difficulty,
 .difficulty-img,
 .search,
-.input {
+.input,
+.slide-container,
+.Bryan,
+.King,
+.Geese {
   background-color: #501313;
+}
+
+.slide-container {
+  margin: 4.5em auto;
+  width: 22em;
+  height: 38.25em;
+  border-radius: 1em;
 }
 
 .container {
@@ -33,11 +44,16 @@ h1,
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 5em auto;
+  margin: auto;
   width: 22em;
   height: 38.25em;
   border-radius: 1em;
   box-shadow: 0em 0em 1em 0.2em #ff0000;
+  position: absolute;
+}
+
+.container:focus {
+  outline: 0;
 }
 
 .char-img {
@@ -142,7 +158,7 @@ h1:hover {
   position: absolute;
   width: 22em;
   height: 38.25em;
-  margin-top: -1em;
+  margin-top: -21.25em;
   margin-left: -1em;
   display: flex;
   flex-direction: column;
@@ -264,10 +280,6 @@ body, html {
   height: auto;
   width: 16em;
   color: #000000;
-}
-
-.hide {
-  transition: 0.4s ease-in-out;
 }
 
 .select:hover .hide {
