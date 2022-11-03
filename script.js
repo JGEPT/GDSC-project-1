@@ -23,10 +23,10 @@ Characters.forEach(character => {
       const Visibility = (Compare === CharacterName);
       console.log(CharacterName, Compare, Visibility);
           if(Visibility !== true){
-          Cards.item(i).classList.add("hide");
+          Cards.item(i).classList.add("invis");
           }
           else{
-            Cards.item(i).classList.remove("hide");
+            Cards.item(i).classList.remove("invis");
           }
           if(i >= (Cards.length-1)){
             i=0;
