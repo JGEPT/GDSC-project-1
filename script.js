@@ -23,10 +23,10 @@ Characters.forEach(character => {
       const Visibility = (Compare === CharacterName);
       console.log(CharacterName, Compare, Visibility);
           if(Visibility !== true){
-          Cards.item(i).classList.add("invis");
+            delete Cards.item(i).dataset.active
           }
           else{
-            Cards.item(i).classList.remove("invis");
+            Cards.item(i).dataset.active = true
           }
           if(i >= (Cards.length-1)){
             i=0;
@@ -46,12 +46,10 @@ buttons.forEach(button => {
     const slides = button
       .closest("[data-carousel]")
       .querySelector("[data-cards]")
-
     const activeSlide = slides.querySelector("[data-active]")
     let newIndex = [...slides.children].indexOf(activeSlide) + offset
     if (newIndex < 0) newIndex = slides.children.length - 1
     if (newIndex >= slides.children.length) newIndex = 0
-
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
   })

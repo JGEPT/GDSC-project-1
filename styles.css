@@ -41,8 +41,7 @@ section {
   border-radius: 1em;
 }
 
-.container,
-.invis {
+.container {
   background-color: #501313;
   display: flex;
   flex-direction: column;
@@ -55,6 +54,7 @@ section {
   position: absolute;
   transition: 0.3s ease-in-out;
   opacity: 0;
+  pointer-events: none;
 }
 
 .container:focus {
@@ -295,11 +295,6 @@ html {
   display: none;
 }
 
-.invis {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .carousel-button {
   position: absolute;
   z-index: 2;
@@ -340,4 +335,5 @@ html {
 
 .container[data-active] {
   opacity: 1;
+  pointer-events: all;
 }
