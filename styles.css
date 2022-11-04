@@ -52,7 +52,7 @@ section {
   border-radius: 1em;
   box-shadow: 0em 0em 1em 0.2em #ff0000;
   position: absolute;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
