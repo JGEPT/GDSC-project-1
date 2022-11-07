@@ -217,15 +217,15 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  background-color: #610202;
+  background-color: transparent;
 }
 
 .charselect {
-  background-color: #610202;
+  background-color: transparent;
   border: none;
   scale: 75%;
   margin-left: -3em;
-  margin-top: -0.75em;
+  margin-top: -0.4em;
 }
 
 .characters,
@@ -290,7 +290,7 @@ html {
   font-size: 1em;
   padding: 1em;
   height: auto;
-  width: 16em;
+  width: 12.7em;
   color: #000000;
 }
 
