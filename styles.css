@@ -246,6 +246,8 @@ header {
   box-shadow: 0em 0em 0.25em 0.001em #ff0000;
   transition: 0.4s ease-in-out;
   pointer-events: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .characters a {
@@ -256,6 +258,8 @@ header {
   text-decoration: none;
   display: block;
   background-color: #610202;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .select:hover .characters,
@@ -290,8 +294,10 @@ html {
   font-size: 1em;
   padding: 1em;
   height: auto;
-  width: 12.715em;
+  width: 14em;
   color: #000000;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .select:hover .hide {
@@ -337,4 +343,8 @@ html {
 .container[data-active] {
   opacity: 1;
   pointer-events: all;
+}
+
+.characters::-webkit-scrollbar {
+  display: none;
 }
